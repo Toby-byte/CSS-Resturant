@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 1600px; /* Sets the maximum width the body can be */
+    margin-left: auto; /* These two margin rules center the body */
+    margin-right: auto;
+}
+
+/* Targets the <nav> element with the class navbar.
+It sets the display to flex for a flexible layout,
+centers items vertically and spaces them out horizontally,
+applies background color,
+and adds padding around the content. */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #d32f2f; /* Red shade */
+    color: white;
+    padding: 10px 20px;
+}
+
+/* makes logo big ans bold */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Targets <a> elements within the .nav-items div. 
+It removes the default underline from links (text-decoration: none), 
+sets their color to white, and spaces them out with a margin on the left. 
+The transition property is used for a smooth color change effect when hovered over. */
+.nav-items .nav-item {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+    transition: color 0.3s;
+  }
+  
+  .nav-items .nav-item:hover {
+    color: #ffd600; /* Yellow shade for hover effect */
+  }
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    /* puts nav-items in a coloumn */
+    .nav-items {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+}
