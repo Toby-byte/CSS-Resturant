@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant KEA</title>
+</head>
+<body>
+    <header>
+        <h1 id="restaurant-name">Restaurant KEA</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="home_page.html" id="nav-home">Home</a></li>
+                <li><a href="food_menu.html" id="nav-menu">Menu</a></li>
+                <li><a href="contact.html" id="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+        <section aria-labelledby="location-info">
+            <h2 id="location-info">Location Information</h2>
+            <p title="Guldbergsgade 29N 2200 Copenhagen"><i>Guldbergsgade 29N 2200 Copenhagen</i></p>
+            <p title="Phone no.: 20 82 53 70"><i>Phone no.: 20 82 53 70</i></p>
+            <p title="E-mail: info@restaurantkea.dk"><i>E-mail: info@restaurantkea.dk</i></p>
+        </section>
+
+        <figure>
+            <img src="img/map.jpg" alt="Map showing the location of Restaurant KEA at Guldbergsgade 29N, 2200 Copenhagen" id="location-map">
+            <figcaption>Location of Restaurant KEA</figcaption>
+        </figure>
+
+        <section aria-labelledby="contact-form">
+            <h2 id="contact-form">Contact Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <section>
+                        <label for="full-name" title="Full Name">Full Name:</label>
+                        <input type="text" id="full-name" name="full_name" required>
+                    </section>
+                    <section>
+                        <label for="phone-number" title="Phone">Phone:</label>
+                        <input type="tel" id="phone-number" name="phone" required>
+                    </section>
+                    <section>
+                        <label for="email-address" title="Email">Email:</label>
+                        <input type="email" id="email-address" name="email" required>
+                    </section>
+                    <section>
+                        <label for="number-of-persons" title="Persons">Persons:</label>
+                    <input type="number" id="number-of-persons" name="persons" min="1" value="2" required>    
+                    </section>
+                    <section>
+                        <label for="reservation-datetime" title="Date and Time">Date and Time:</label>
+                        <input type="datetime-local" id="reservation-datetime" name="datetime" required>
+                    </section>
+                    <section>
+                        <div>
+                            <label for="comments" title="Further Information">Further Information:</label>
+                        </div>
+                        <textarea id="comments" name="comments" cols="30" rows="5"></textarea>
+                    </section>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>    
+
+    <footer>
+        <p>&copy; KEA Development</p>
+    </footer>
+</body>
+</html>
