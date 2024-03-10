@@ -4,11 +4,146 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+#customer-reviews {
+    background-color: rgb(187, 176, 176);
+    padding: 1%;
+}
+
+#contact-page {
+    display: flex;
+}
+
+#resturant_img {
+    display: flex;
+    flex-direction: column;
+}
+
+#pic_and_text {
+    display: flex;
+    padding: 1%;
+} 
+
+/* makes logo big ans bold */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 10px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#food-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    padding: 10px;
+    background-color: blanchedalmond;
+    margin: 5px;
+    border-radius: 10px;
+}
+
 main {
-    max-width: 1600px; /* Sets the maximum width the body can be */
+    max-width: 1200px; /* Sets the maximum width the body can be */
     margin-left: auto; /* These two margin rules center the body */
     margin-right: auto;
 }
+
+#price {
+    background-color: #d32f2f;
+    border-radius: 10px;
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* _________________________Contact_form_____________________________ */
+
+/* General styles */
+section[aria-labelledby="contact-form"] {
+    font-family: Arial, sans-serif;
+    width: 400px; /* Adjust the width as necessary */
+    padding: 20px;
+    margin: 0 auto; /* Center the section */
+  }
+  
+  h2#contact-form {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+  }
+  
+  /* Fieldset and legend styling */
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  legend {
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+  /* Input and label styling */
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  input[type="datetime-local"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  }
+  
+  textarea {
+    resize: vertical; /* Allows vertical resize only */
+  }
+  
+  /* Button styling */
+  button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #333;
+  }
+  
+  /* Focus styles for accessibility */
+  input:focus,
+  textarea:focus,
+  button:focus {
+    outline: 2px solid #005fcc; /* Change as per your preference */
+  }
+  
+  /* _________________________Contact_form_____________________________ */
 
 /* Targets the <nav> element with the class navbar.
 It sets the display to flex for a flexible layout,
@@ -22,12 +157,6 @@ and adds padding around the content. */
     background-color: #d32f2f; /* Red shade */
     color: white;
     padding: 10px 20px;
-}
-
-/* makes logo big ans bold */
-.logo {
-    font-size: 24px;
-    font-weight: bold;
 }
 
 /* Targets <a> elements within the .nav-items div. 
@@ -45,6 +174,17 @@ The transition property is used for a smooth color change effect when hovered ov
   .nav-items .nav-item:hover {
     color: #ffd600; /* Yellow shade for hover effect */
   }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    color: #d32f2f;
+    font-weight: bold;
+    padding: 5px;
+}
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
