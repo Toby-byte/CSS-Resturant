@@ -31,6 +31,9 @@ body, html {
 
 img {
     border-radius: 10px;
+    width: clamp(160px, 25vw, 800px);
+    height: auto;
+    object-fit: contain;
 }
 
 figure {
@@ -192,6 +195,12 @@ ul li {
     .nav-items {
       display: flex;
       flex-direction: column;
+    }
+
+    .food-item {
+      width: 100%;
+      margin-right: 10px;
+      margin-left: 10px;
     }
   
     .nav-item {
