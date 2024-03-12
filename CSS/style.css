@@ -31,7 +31,7 @@ body, html {
 
 img {
     border-radius: 10px;
-    width: clamp(160px, 25vw, 800px);
+    width: clamp(160px, 25vw, 300px);
     height: auto;
     object-fit: contain;
 }
@@ -189,12 +189,28 @@ ul li {
     padding: 5px;
 }
 
+#home_page_picture {
+  width: clamp(25vw, 50vw, 500px);
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #contact-page {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #KEA_location {
+    width: clamp(300px, 50vw, 500px);
+  }
+
+}
+
 /* Responsive layout for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     /* puts nav-items in a coloumn */
     .nav-items {
       display: flex;
-      flex-direction: column;
     }
 
     .food-item {
@@ -206,4 +222,35 @@ ul li {
     .nav-item {
       margin: 10px 0;
     }
+
+    #contact-page {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    section[aria-labelledby="location-info"] {
+      width: 80%; /* Ensures the image takes full width of its container */
+    }
+
+    figure {
+      width: 80%; /* Ensures the image takes full width of its container */
+    }
+
+    section[aria-labelledby="contact-form"] {
+      width: 100%; /* Ensures the image takes full width of its container */
+    }
+
+    #pic_and_text {
+      flex-direction: column-reverse;
+    }
+
+    #home_page_picture {
+      width: clamp(40vw, 80vw, 800px);
+    }
+
+    #KEA_location {
+      width: clamp(300px, 50vw, 500px);
+    }
+
 }
