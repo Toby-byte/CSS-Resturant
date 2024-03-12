@@ -13,7 +13,7 @@ body, html {
     display: flex;
 }
 
-#resturant_img {
+#resturant_body {
     display: flex;
     flex-direction: column;
 }
@@ -23,7 +23,7 @@ body, html {
     padding: 1%;
 } 
 
-/* makes logo big ans bold */
+/* makes logo big and bold */
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -58,9 +58,11 @@ figure {
     border-radius: 10px;
 }
 
+/* Sets the maximum width the body can be */
+/* These two margins set to auto centers the body */
 main {
-    max-width: 1200px; /* Sets the maximum width the body can be */
-    margin-left: auto; /* These two margin rules center the body */
+    max-width: 1200px; 
+    margin-left: auto; 
     margin-right: auto;
 }
 
@@ -75,12 +77,11 @@ main {
 
 /* _________________________Contact_form_____________________________ */
 
-/* General styles */
 section[aria-labelledby="contact-form"] {
     font-family: Arial, sans-serif;
-    width: 400px; /* Adjust the width as necessary */
+    width: 400px;
     padding: 20px;
-    margin: 0 auto; /* Center the section */
+    margin: 0 auto;
   }
   
   h2#contact-form {
@@ -89,7 +90,6 @@ section[aria-labelledby="contact-form"] {
     border-bottom: 1px solid #000;
   }
   
-  /* Fieldset and legend styling */
   fieldset {
     border: none;
     padding: 0;
@@ -101,7 +101,6 @@ section[aria-labelledby="contact-form"] {
     padding-bottom: 10px;
   }
   
-  /* Input and label styling */
   label {
     display: block;
     margin-top: 10px;
@@ -116,14 +115,14 @@ section[aria-labelledby="contact-form"] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    box-sizing: border-box;
   }
   
+  /* Allows vertical resize only */
   textarea {
-    resize: vertical; /* Allows vertical resize only */
+    resize: vertical; 
   }
   
-  /* Button styling */
   button[type="submit"] {
     background-color: #000;
     color: #fff;
@@ -132,40 +131,30 @@ section[aria-labelledby="contact-form"] {
     cursor: pointer;
     margin-top: 20px;
     width: 100%;
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    box-sizing: border-box;
   }
   
   button[type="submit"]:hover {
     background-color: #333;
   }
   
-  /* Focus styles for accessibility */
   input:focus,
   textarea:focus,
   button:focus {
-    outline: 2px solid #005fcc; /* Change as per your preference */
+    outline: 2px solid #005fcc;
   }
   
   /* _________________________Contact_form_____________________________ */
 
-/* Targets the <nav> element with the class navbar.
-It sets the display to flex for a flexible layout,
-centers items vertically and spaces them out horizontally,
-applies background color,
-and adds padding around the content. */
 .navbar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #d32f2f; /* Red shade */
+    background-color: #d32f2f;
     color: white;
     padding: 10px 20px;
 }
 
-/* Targets <a> elements within the .nav-items div. 
-It removes the default underline from links (text-decoration: none), 
-sets their color to white, and spaces them out with a margin on the left. 
-The transition property is used for a smooth color change effect when hovered over. */
 .nav-items .nav-item {
     text-decoration: none;
     font-weight: bold;
@@ -193,6 +182,7 @@ ul li {
   width: clamp(25vw, 50vw, 500px);
 }
 
+/* Responsive layout for smaller screens */
 @media screen and (min-width: 426px) and (max-width: 768px) {
   #contact-page {
     display: flex;
@@ -206,7 +196,7 @@ ul li {
 
 }
 
-/* Responsive layout for smaller screens */
+
 @media (max-width: 425px) {
     /* puts nav-items in a coloumn */
     .nav-items {
@@ -230,15 +220,15 @@ ul li {
     }
 
     section[aria-labelledby="location-info"] {
-      width: 80%; /* Ensures the image takes full width of its container */
+      width: 80%; 
     }
 
     figure {
-      width: 80%; /* Ensures the image takes full width of its container */
+      width: 80%; 
     }
 
     section[aria-labelledby="contact-form"] {
-      width: 100%; /* Ensures the image takes full width of its container */
+      width: 100%;
     }
 
     #pic_and_text {
